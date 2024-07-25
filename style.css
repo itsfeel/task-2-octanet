@@ -1,0 +1,118 @@
+body {
+    background-image: url('bg.jpg'); /* Ensure 'bg.jpg' is in the same directory or adjust path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b3b4f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.taskItem p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.taskItem img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.completed p {
+    text-decoration: line-through;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.progress-container {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    background-color: #555;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 0.3s;
+}
+
+#progress-text {
+    text-align: right;
+}
